@@ -1,15 +1,15 @@
 {
   "name": "demotestpy1",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "sharp": "^0.33.5"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
 }
