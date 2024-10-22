@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "url": "https://effervescent-puppy-32cd33.netlify.app",
             "webRoot": "${workspaceFolder}"
         }
     ]
