@@ -7,36 +7,36 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 20px;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
         .camera-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        video, canvas, img {
+        video, img {
             max-width: 100%;
             margin-bottom: 10px;
         }
         button {
             padding: 10px 20px;
             margin: 5px;
+            cursor: pointer;
             background-color: #007bff;
             color: white;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
         }
         button:disabled {
             background-color: #cccccc;
-        }
-        .output {
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -45,17 +45,17 @@
 <div class="camera-container">
     <video id="video" autoplay playsinline></video>
     <canvas id="canvas" style="display: none;"></canvas>
-    <button id="capture-btn">Capture Photo</button>
-    <button id="record-btn">Start Recording</button>
-    <button id="stop-record-btn" disabled>Stop Recording</button>
-    <div class="output">
-        <h3>Uploaded Files:</h3>
+    <div>
+        <button id="capture-btn">Capture Photo</button>
+        <button id="record-btn">Record Video</button>
+        <button id="stop-record-btn" disabled>Stop Recording</button>
+    </div>
+    <div>
         <img id="uploaded-image" style="display:none;" />
-        <video id="uploaded-video" controls style="display:none;"></video>
+        <video id="uploaded-video" style="display:none;" controls></video>
     </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
